@@ -1,17 +1,36 @@
 import React from "react";
 
-import { Container, H1, P } from './styles';
+
+import {
+  Container,
+  H1,
+  Image,
+  ContainerItens,
+  InputLabel,
+  Input,
+  Button
+} from "./styles";
 
 const App = () => {
 
-  const hello = "Hello React";
-
   return (
-  <Container>
-    <H1 >{hello}</H1>
-    <P>Esse é meu parágrafo </P>
-    <P>Esse é meu outro parágrafo</P>
-  </Container>
+    <Container>
+      <Image />
+      <ContainerItens>
+        <H1>Olá</H1>
+
+        <InputLabel>Nome</InputLabel>
+        <Input placeholder="Nome"/>
+
+        <InputLabel>Idade</InputLabel>
+        <Input placeholder="Idade"/>
+
+        <Button>Cadastrar</Button>
+
+        
+      </ContainerItens>
+
+    </Container>
   );
 
 }
